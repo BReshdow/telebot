@@ -6,12 +6,12 @@ def text(url):
     w_tuple = parse(url)
     description = f'{w_tuple[0]}\n' + f'{w_tuple[1]}\n' if w_tuple[1] \
         else f'{w_tuple[0]}\n'
-    return description + f'8:00:  {w_tuple[2][0]} {w_tuple[3][0]}м/с\n'\
-                         f'11:00: {w_tuple[2][1]} {w_tuple[3][1]}м/с\n'\
-                         f'14:00: {w_tuple[2][2]} {w_tuple[3][2]}м/с\n'\
-                         f'17:00: {w_tuple[2][3]} {w_tuple[3][3]}м/с\n'\
-                         f'20:00: {w_tuple[2][4]} {w_tuple[3][4]}м/с\n'\
-                         f'23:00: {w_tuple[2][5]} {w_tuple[3][5]}м/с\n'
+    return description + f'8:00:  {w_tuple[2][0]}С {w_tuple[3][0]}%\n'\
+                         f'11:00: {w_tuple[2][1]}С {w_tuple[3][1]}%\n'\
+                         f'14:00: {w_tuple[2][2]}С {w_tuple[3][2]}%\n'\
+                         f'17:00: {w_tuple[2][3]}С {w_tuple[3][3]}%\n'\
+                         f'20:00: {w_tuple[2][4]}С {w_tuple[3][4]}%\n'\
+                         f'23:00: {w_tuple[2][5]}С {w_tuple[3][5]}%\n'
 
 
 def parse(url) -> str or None:
